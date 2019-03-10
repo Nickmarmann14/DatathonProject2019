@@ -1,0 +1,7 @@
+SELECT 
+count(DateTime) as "People on Bus", strftime('%H', DateTime) as  "Hour",
+StopName
+FROM
+WSWednesday
+GROUP BY
+StopName, strftime('%H:', DateTime);
